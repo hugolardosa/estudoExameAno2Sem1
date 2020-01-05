@@ -1,3 +1,4 @@
+%%exercicio1
 T = [0  0   1/2 0   1/2 1/5;
     1/2 1/3 1/2 1/2 1/2 1/5;
     0   0   0   0   0   1/5;
@@ -25,3 +26,9 @@ plot(n,plotC);
 plot(n,plotD);
 plot(n,plotE);
 plot(n,plotF);
+%% ex2
+clc
+clear
+%   ireq fr  s q B Is EUA 
+T = [0.7 0.1 0 0 0 0  0;
+     0.2 0 0.3
