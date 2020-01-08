@@ -11,13 +11,13 @@ X3= T^3 * X0
 %% 
 n= (1:100)
 for i = 1:100
-    trasicao = T^i;
-    plotA(i) = trasicao(1);
-    plotB(i) = trasicao(2);
-    plotC(i) = trasicao(3);
-    plotD(i) = trasicao(4);
-    plotE(i) = trasicao(5);
-    plotF(i) = trasicao(6);
+    X0 = T*X0;
+    plotA(i) = X0(1);
+    plotB(i) = X0(2);
+    plotC(i) = X0(3);
+    plotD(i) = X0(4);
+    plotE(i) = X0(5);
+    plotF(i) = X0(6);
 end
 hold on
 plot(n,plotA);
@@ -26,9 +26,3 @@ plot(n,plotC);
 plot(n,plotD);
 plot(n,plotE);
 plot(n,plotF);
-%% ex2
-clc
-clear
-%   ireq fr  s q B Is EUA 
-T = [0.7 0.1 0 0 0 0  0;
-     0.2 0 0.3
